@@ -49,11 +49,11 @@ get_binary_path_in_archive() {
   local version=$3
   local platform=$4
 
-  echo "${archive_dir}/${binary_name}-${platform}"
+  echo "${archive_dir}/${binary_name}"
 }
 
 get_platform() {
-  echo "$(uname | tr [:upper:] [:lower:])-amd64"
+  echo "$(uname | tr [:upper:] [:lower:]).amd64"
 }
 
 get_filename() {
@@ -61,10 +61,10 @@ get_filename() {
   local platform="$2"
   local binary_name="$3"
 
-  echo "${binary_name}-${platform}"
+  echo "${binary_name}.${platform}.tgz"
 }
 
-# https://github.com/jmespath/jp/releases/download/0.1.3/jp-darwin-amd64
+# https://github.com/ekalinin/github-markdown-toc.go/releases/download/1.0.0/gh-md-toc.darwin.amd64.tgz
 
 get_download_url() {
   local version="$1"
