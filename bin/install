@@ -31,7 +31,8 @@ install_tool() {
 
   echo "Downloading [${binary_name}] from ${download_url} to ${download_path}"
   curl -sSL -o "$download_path" "$download_url"
-  (set -x tar xf -C "$(dirname "$download_path")/" "$download_path")
+  echo "tar xf -C \"$(dirname "$download_path")/\" \"$download_path\""
+  tar xf -C "$(dirname "$download_path")/" "$download_path"
 
   echo "Creating bin directory"
   mkdir -p "${bin_install_path}"
