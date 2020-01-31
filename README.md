@@ -1,6 +1,6 @@
 # asdf-github-markdown-toc
 
-[Build Status]
+[![Build Status](https://travis-ci.org/skyzyx/asdf-github-markdown-toc.svg?branch=master)](https://travis-ci.org/skyzyx/asdf-github-markdown-toc)
 
 [github-markdown-toc](https://github.com/ekalinin/github-markdown-toc.go) plugin for the [asdf](https://github.com/asdf-vm/asdf) version manager.
 
